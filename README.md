@@ -2,8 +2,13 @@
 
  Programas feito no curso da harvard em 2020 e 2021
  
-# pset1
+# pset0
   Pequena história feita no Scratch (em desenvolvimento)
+# pset1 e Lab1
+  * mario.c    
+  * Population.c
+  * credit.c
+  
 # pset2
 
 # pset3
