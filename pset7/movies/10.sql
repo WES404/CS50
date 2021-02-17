@@ -1,0 +1,1 @@
+SELECT DISTINCT people.name FROM movies INNER JOIN directors ON movies.id = directors.movie_id INNER join people ON people.id = directors.person_id INNER JOIN ratings ON ratings.movie_id = movies.id WHERE ratings.rating >= 9.0
