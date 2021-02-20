@@ -1,0 +1,12 @@
+               sort1       sort2        sort3
+reversed5000   0m0.079s    0m0.010s	0m0.065s
+reversed10000  0m0.393s    0m0.020s	0m0.217s
+reversed50000  0m13.282s   0m5.376s	0m10.831s
+
+random5000     0m0.058s	   0m0.009s	0m0.033s
+random10000    0m0.508s	   0m0.020s	0m0.182s
+random50000    0m16.680s   0m4.590s	0m11.397s
+
+sorted5000     0m0.014s    0m0.012s	0m0.033s
+sorted10000    0m0.054s	   0m0.020s	0m0.200s
+sorted50000    0m4.984s    0m4.907s	0m7.930s
