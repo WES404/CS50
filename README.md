@@ -9,7 +9,10 @@
   * Population.c
   * credit.c
   
-# pset2
+# pset2 e Lab2
+ * Readability.c
+ * Substitution.c
+ * Scrabble.c
 
 # pset3
 
