@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Resposta correta
+                let correto = document.querySelector('#correct')
+
+                correto.addEventListener('click', function() {
+
+                    correto.style.backgroundColor = 'green'
+                    document.querySelector('#feedback').innerHTML = 'Correct!'
+
+                })
+
+                // Resposta Incorreta
+                let incorreto = document.querySelectorAll('#incorrect')
+
+                for (let i = 0; i < incorreto.length; i++) {
+
+                    incorreto[i].addEventListener('click', function() {
+
+                        incorreto[i].style.backgroundColor = 'red'
+                        document.querySelector('#feedback').innerHTML = 'Incorrect!'
+
+                    })
+                }
+
+                // Checa a resposta do ultimo
+                document.querySelector('.check').addEventListener('click', function() {
+
+                    let tag = document.querySelector('input')
+
+                    if ('27' === tag.value){
+                        tag.style.backgroundColor = 'green'
+                        document.querySelector('#feedback2').innerHTML = 'Correct!'
+
+                    }
+                    else {
+                        tag.style.backgroundColor = 'red'
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!'
+
+                    }
+                })
+            })
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which is Lady Gaga's real name?</h3>
+
+                <button type='button' id='correct'>Stefani Joanne</button>
+                <button type='button' id='incorrect'>Sarah Fernandi</button>
+                <button type='button' id='incorrect'>Robyn Fenty</button>
+
+                <p id='feedback'></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>How many star are there in Brazil's flag?</h3>
+
+                <input type='text' class='resposta'/>
+                <button type='button' class='check'>Confirm</button>
+
+                <p id='feedback2'></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>
