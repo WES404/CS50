@@ -1,0 +1,74 @@
+body {
+    font-family: Helvetica, "Trebuchet MS" sans-serif;
+    background: #fff url();
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MENU */
+ul .pages a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e676e;
+    line-height: 30px;
+}
+
+ul .pages {
+    float: left;
+}
+
+ul {
+    list-style: none;
+}
+
+ul .pages a:hover {
+    background: lightblue;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+/****** Main ********/
+
+.main {
+    float: left;
+    width: 50%;
+    padding: 20px 0px;
+    background: url() top left repeat-y;
+}
+
+/**** Lateral *****/
+
+.lateral {
+    float: right;
+    width: 50%;
+    padding: 20px 0px;
+    background: url() top left repeat-y;
+}
+
+
+/***** Text  ****/
+
+h2 {
+    color: lightseagreen;
+    font-size: 1.9em;
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1px;
+}
+/***** Footnote  *****/
+
+#footnote {
+    clear: both;
+    padding: 16px;
+    color:#7d7640;
+    background: #fff url(./imagens/bg-rodape.png) repeat-x top;
+}
