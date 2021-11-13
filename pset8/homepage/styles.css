@@ -15,8 +15,8 @@ a {
 
 #container {
     margin: 0 auto;
-    min-width: 500px;
-    max-width: 1000px;
+    height: 100%;
+    width: 100%;
     background: whitesmoke;
 }
 
@@ -47,18 +47,17 @@ ul#pages a {
     text-transform: uppercase;
     font-size: 0.8em;
     padding: 5px;
-    color: #6e676e;
+    color: black;
     line-height: 30px;
 }
 
 
 ul {
     list-style: none;
-    float: center;
 }
 
 ul li {
-    float: right;
+    float: left;
 }
 
 ul#pages a:hover {
@@ -91,26 +90,44 @@ ul#pages a:hover {
     background: url(../images/box.png);
 }
 
-.lateral {
+#lateral {
     float: right;
     width: 50%;
-    padding: 20px 0px;
+    padding: 20px;
     background: url() top left repeat-y;
 }
 
+#ads{
+    position: relative;
+}
+
+#ads img{
+    float: left;
+}
+
+#ads h3 {
+    margin-left: 1px;
+    float: right;
+}
+
+#ads p {
+    float: right;
+}
 
 /***** Text  ****/
 
-h2 {
+h2, h3 {
     color: lightseagreen;
     font-size: 1.9em;
+    text-transform: capitalize;
     padding: 5px 0px;
 }
 
-p {
+.main p {
     font-size: 1em;
     margin-bottom: 1px;
 }
+
 /***** Footnote  *****/
 
 #footnote {
